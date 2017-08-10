@@ -56,12 +56,12 @@ class ProfileScreen extends React.Component {
 
             <View style={styles.card_content}>
               <Text style={styles.label_txt}>Name          :</Text>
-              <Text style={styles.label_txt}>Shruti</Text>
+              <Text style={styles.label_txt}>Irshad</Text>
             </View>
 
             <View style={styles.card_content}>
               <Text style={styles.label_txt}>MobileNumber  :</Text>
-              <Text style={styles.label_txt}>8674745574</Text>
+              <Text style={styles.label_txt}>8989765432</Text>
             </View>
 
           </View>
@@ -71,17 +71,17 @@ class ProfileScreen extends React.Component {
 
             <View style={styles.card_content}>
               <Text style={styles.label_txt}>User Name    :</Text>
-              <Text style={styles.label_txt}>Shruti</Text>
+              <Text style={styles.label_txt}>Mukesh</Text>
             </View>
 
             <View style={styles.card_content}>
               <Text style={styles.label_txt}>MobileNumber :</Text>
-              <Text style={styles.label_txt}>8674745574</Text>
+              <Text style={styles.label_txt}>8765678987</Text>
             </View>
 
             <View style={styles.card_content}>
               <Text style={styles.label_txt}>Email        :</Text>
-              <Text style={styles.label_txt}>shruti@xelpmoc.in</Text>
+              <Text style={styles.label_txt}>mukesh@yahoo.in</Text>
             </View>
 
           </View>
@@ -91,7 +91,7 @@ class ProfileScreen extends React.Component {
 
             <View style={styles.card_content}>
               <Text style={styles.label_txt}>Name       :</Text>
-              <Text style={styles.label_txt}>Shruti</Text>
+              <Text style={styles.label_txt}>Nitin</Text>
             </View>
 
             <View style={styles.card_content}>
@@ -101,7 +101,7 @@ class ProfileScreen extends React.Component {
 
             <View style={styles.card_content}>
               <Text style={styles.label_txt}>Email        :</Text>
-              <Text style={styles.label_txt}>shruti@xelpmoc.in</Text>
+              <Text style={styles.label_txt}>nitin@gmail.com</Text>
             </View>
 
           </View>
@@ -111,17 +111,17 @@ class ProfileScreen extends React.Component {
 
             <View style={styles.card_content}>
               <Text style={styles.label_txt}>Name       :</Text>
-              <Text style={styles.label_txt}>Shruti</Text>
+              <Text style={styles.label_txt}>Mahesh</Text>
             </View>
 
             <View style={styles.card_content}>
               <Text style={styles.label_txt}>MobileNumber :</Text>
-              <Text style={styles.label_txt}>8674745574</Text>
+              <Text style={styles.label_txt}>9876789876</Text>
             </View>
 
             <View style={styles.card_content}>
               <Text style={styles.label_txt}>Email        :</Text>
-              <Text style={styles.label_txt}>shruti@xelpmoc.in</Text>
+              <Text style={styles.label_txt}>mahesh@gmail.com</Text>
             </View>
 
           </View>
