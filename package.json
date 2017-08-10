@@ -6,6 +6,11 @@
 		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"test": "jest"
 	},
+	"rnpm": {
+		"assets": [
+			"./assets/fonts"
+		]
+	},
 	"dependencies": {
 		"prop-types": "^15.5.10",
 		"react": "16.0.0-alpha.12",
@@ -34,9 +39,6 @@
 	},
 	"jest": {
 		"preset": "react-native"
-	},
-	"rnpm": {
-"assets" :["./assets/fonts"]
 	}
 	
 }

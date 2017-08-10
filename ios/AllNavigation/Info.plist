@@ -63,6 +63,16 @@
 		<string>Octicons.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>Roboto-Bold.ttf</string>
+		<string>Roboto-Light.ttf</string>
+		<string>Roboto-Medium.ttf</string>
+		<string>Roboto-Regular.ttf</string>
+		<string>Roboto-Thin.ttf</string>
+		<string>vincHand.ttf</string>
+		<string>RobotoBold.ttf</string>
+		<string>RobotoLight.ttf</string>
+		<string>RobotoThin.ttf</string>
+		<string>RobotoRegular.ttf</string>
 	</array>
 </dict>
 </plist>

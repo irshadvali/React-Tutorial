@@ -22,6 +22,7 @@ import AsyncStorageExample from './src/AsyncStorageExample';
 import PopupDialogTest from './src/PopupDialogTest';
 import Movies from './src/Movies';
 import TestFile from './src/TestFile';
+import FontTest from './src/FontTest';
 import {
   AppRegistry,
   StyleSheet,
@@ -59,6 +60,7 @@ const sample_stack = StackNavigator({ /* we can change it to  TabNavigator and D
     PopupDialogTest: {screen: PopupDialogTest},
      Movies: {screen: Movies},
      TestFile: {screen: TestFile},
+     FontTest: {screen: FontTest},
 });
 
 

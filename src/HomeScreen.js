@@ -115,15 +115,20 @@ export default class HomeScreen extends React.Component {
               <Text style={styles.buttonText}>PopupDialogTest</Text>
             </View>
           </TouchableHighlight>
-                    <TouchableHighlight onPress={() => navigate('Movies', {})}>
+          <TouchableHighlight onPress={() => navigate('Movies', {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>Movies List Api</Text>
             </View>
           </TouchableHighlight>
 
-                    <TouchableHighlight onPress={() => navigate('TestFile', {})}>
+          <TouchableHighlight onPress={() => navigate('TestFile', {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>TestFile List Api</Text>
+            </View>
+          </TouchableHighlight>
+                    <TouchableHighlight onPress={() => navigate('FontTest', {})}>
+            <View style={styles.buttondtyle}>
+              <Text style={styles.buttonText}>Font Test </Text>
             </View>
           </TouchableHighlight>
         </ScrollView>
