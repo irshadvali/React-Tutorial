@@ -1,0 +1,42 @@
+{
+	"name": "AllNavigation",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"test": "jest"
+	},
+	"dependencies": {
+		"prop-types": "^15.5.10",
+		"react": "16.0.0-alpha.12",
+		"react-native": "0.46.4",
+		"react-native-drawer-menu": "^0.2.4",
+		"react-native-easy-grid-view": "^0.1.1",
+		"react-native-image-slider": "^1.1.5",
+		"react-native-infoslider": "^1.0.1",
+		"react-native-linear-gradient": "^2.1.0",
+		"react-native-map": "0.0.1",
+		"react-native-maps": "^0.15.3",
+		"react-native-material-design": "^0.3.7",
+		"react-native-popup-dialog": "^0.9.32",
+		"react-native-shared-preferences": "0.0.8",
+		"react-native-svg-image": "^1.1.4",
+		"react-native-svg-uri": "^1.2.0",
+		"react-native-vector-icons": "^4.3.0",
+		"react-native-xtabbar": "^0.2.1",
+		"react-navigation": "^1.0.0-beta.12"
+	},
+	"devDependencies": {
+		"babel-jest": "20.0.3",
+		"babel-preset-react-native": "2.1.0",
+		"jest": "20.0.4",
+		"react-test-renderer": "16.0.0-alpha.12"
+	},
+	"jest": {
+		"preset": "react-native"
+	},
+	"rnpm": {
+"assets" :["./assets/fonts"]
+	}
+	
+}
