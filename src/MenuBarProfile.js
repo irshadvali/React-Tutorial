@@ -82,7 +82,7 @@ constructor(props) {
     var rightDrawerContent = (<View style={styles.drawerContent}>
       <View style={styles.leftTop}>
           <Image source={logoImg} style={styles.image} />
-          <Text style={styles.profilename_txt}>Xelpmoc Design</Text>
+          <Text style={styles.profilename_txt}>Irshad vali</Text>
         </View>
       <View style={styles.leftBottom}>
        <TouchableOpacity style={styles.section} onPress={() => navigate('login',{})}>
@@ -192,19 +192,19 @@ constructor(props) {
 
         <View style={styles.logo_layout}>
           <Image source={logoImg} style={styles.image} />
-          <Text style={styles.profilename_txt}>Xelpmoc Design</Text>
+          <Text style={styles.profilename_txt}>Irshad Vali</Text>
         </View>
 
         <View style={styles.card_layout}>
 
         <View style={styles.card_content}>
         <Text style={styles.label_txt}>Name          :</Text>
-        <Text style={styles.label_txt}>Shruti</Text>
+        <Text style={styles.label_txt}>Vali</Text>
         </View>
 
         <View style={styles.card_content}>
         <Text style={styles.label_txt}>MobileNumber  :</Text>
-        <Text style={styles.label_txt}>8674745574</Text>
+        <Text style={styles.label_txt}>xxxxxxxxxx</Text>
         </View>
 
         </View>
@@ -214,17 +214,17 @@ constructor(props) {
 
         <View style={styles.card_content}>
         <Text style={styles.label_txt}>User Name    :</Text>
-        <Text style={styles.label_txt}>Shruti</Text>
+        <Text style={styles.label_txt}>Anil</Text>
         </View>
 
         <View style={styles.card_content}>
         <Text style={styles.label_txt}>MobileNumber :</Text>
-        <Text style={styles.label_txt}>8674745574</Text>
+        <Text style={styles.label_txt}>xxxxxxxxxx</Text>
         </View>
 
         <View style={styles.card_content}>
         <Text style={styles.label_txt}>Email        :</Text>
-        <Text style={styles.label_txt}>shruti@xelpmoc.in</Text>
+        <Text style={styles.label_txt}>anil@yahoo.in</Text>
         </View>
 
         </View>
@@ -234,7 +234,7 @@ constructor(props) {
 
         <View style={styles.card_content}>
         <Text style={styles.label_txt}>Name       :</Text>
-        <Text style={styles.label_txt}>Shruti</Text>
+        <Text style={styles.label_txt}>Shunil</Text>
         </View>
 
         <View style={styles.card_content}>
@@ -244,7 +244,7 @@ constructor(props) {
 
         <View style={styles.card_content}>
         <Text style={styles.label_txt}>Email        :</Text>
-        <Text style={styles.label_txt}>shruti@xelpmoc.in</Text>
+        <Text style={styles.label_txt}>Shunil@yahoo.in</Text>
         </View>
 
         </View>
@@ -254,17 +254,17 @@ constructor(props) {
 
         <View style={styles.card_content}>
         <Text style={styles.label_txt}>Name       :</Text>
-        <Text style={styles.label_txt}>Shruti</Text>
+        <Text style={styles.label_txt}>Mukesh</Text>
         </View>
 
         <View style={styles.card_content}>
         <Text style={styles.label_txt}>MobileNumber :</Text>
-        <Text style={styles.label_txt}>8674745574</Text>
+        <Text style={styles.label_txt}>xxxxxxxxxx</Text>
         </View>
 
         <View style={styles.card_content}>
         <Text style={styles.label_txt}>Email        :</Text>
-        <Text style={styles.label_txt}>shruti@xelpmoc.in</Text>
+        <Text style={styles.label_txt}>mukesh@yahoo.in</Text>
         </View>
 
         </View>
