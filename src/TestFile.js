@@ -10,7 +10,7 @@ export default class TestFile extends Component {
     }
 
     componentDidMount() {
-        return fetch('https://beta.4tigo.com/beta/app/index.php?action=showLoadsInfo&usertype=3&userid=2017061921766800&ctid=10277&curLat=12.93903461&curLng=77.62246952&appVersion=&defimei=&fromapp=1&respLang=1')
+        return fetch('https://api.myjson.com/bins/oe7xx')
             .then((response) => response.json())
             .then((responseJson) => {
                 let ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
