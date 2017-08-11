@@ -43,8 +43,8 @@ npm install --save react- native - back - android
 
 
 
-12. For Custom Font 
- for custom font you have to create a font in assets folder which is in side the project(e.g. Allnavigation->assets->fonts)   
+12. For Custom Font :=
+ for custom font you have to create a font file in assets folder which is in side the project(e.g. Allnavigation->assets->fonts)   
 
 
  in package.json file you gave to write
