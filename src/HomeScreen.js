@@ -128,11 +128,13 @@ export default class HomeScreen extends React.Component {
           </TouchableHighlight>
                     <TouchableHighlight onPress={() => navigate('FontTest', {})}>
             <View style={styles.buttondtyle}>
-              <Text style={styles.buttonText}>Font Test </Text>
+              <Text style={styles.buttonText}>Font Show </Text>
             </View>
+
           </TouchableHighlight>
         </ScrollView>
       </View>
+
     );
   }
 }
