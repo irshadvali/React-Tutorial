@@ -47,6 +47,24 @@ const styles = StyleSheet.create({
     },
     texcolorbold:{
      color:'#333'
-    }
+    },
+    buttondtyle: {
+    marginTop: 10,
+    marginLeft: 10,
+    marginRight: 10,
+    backgroundColor: '#2196F3',
+  },
+  buttonText: {
+    padding: 20,
+    color: 'white',
+    fontSize: 20,
+    textAlign: 'center',
+
+  },
+  scvwcontainer: {
+    marginBottom: 10,
+    flex: 1,
+    flexDirection: 'column',
+  },
   });
   export default styles;
