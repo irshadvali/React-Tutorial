@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import SharedPreferences from 'react-native-shared-preferences';
+import styles from '../Styles';
 
 export default class HomeScreen extends React.Component {
 
@@ -139,29 +140,3 @@ export default class HomeScreen extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  buttondtyle: {
-    marginTop: 10,
-    marginLeft: 10,
-    marginRight: 10,
-    backgroundColor: '#2196F3',
-  },
-  buttonText: {
-    padding: 20,
-    color: 'white',
-    fontSize: 20,
-    textAlign: 'center',
-
-  },
-  scvwcontainer: {
-    marginBottom: 10,
-    flex: 1,
-    flexDirection: 'column',
-  },
-})
