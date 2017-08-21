@@ -66,5 +66,11 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
   },
+buttontwo: {
+    padding: 20,
+    color: '#d00000',
+    textAlign: 'center',
+
+  }
   });
   export default styles;
