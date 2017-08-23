@@ -23,6 +23,7 @@ import PopupDialogTest from './src/PopupDialogTest';
 import Movies from './src/Movies';
 import TestFile from './src/TestFile';
 import FontTest from './src/FontTest';
+import TestApiTwo from './src/TestApiTwo';
 
 import {
   AppRegistry,
@@ -62,6 +63,7 @@ const sample_stack = StackNavigator({ /* we can change it to  TabNavigator and D
      Movies: {screen: Movies},
      TestFile: {screen: TestFile},
      FontTest: {screen: FontTest},
+     TestApiTwo: {screen: TestApiTwo},
     
 });
 

@@ -1,4 +1,4 @@
-import React, { Component, props } from 'react';
+import React, { Component, props } from "react";
 import {
   AppRegistry,
   StyleSheet,
@@ -7,15 +7,14 @@ import {
   ScrollView,
   View,
   AsyncStorage
-} from 'react-native';
-import { StackNavigator } from 'react-navigation';
-import SharedPreferences from 'react-native-shared-preferences';
-import styles from '../Styles';
+} from "react-native";
+import { StackNavigator } from "react-navigation";
+import SharedPreferences from "react-native-shared-preferences";
+import styles from "../Styles";
 
 export default class HomeScreen extends React.Component {
-
   static navigationOptions = {
-    title: 'Example',
+    title: "Example"
   };
 
   render() {
@@ -25,118 +24,123 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.scvwcontainer}>
         <ScrollView style={styles.scvwcontainer}>
-
-          <TouchableHighlight onPress={() => navigate('Profile', {})}>
+          <TouchableHighlight onPress={() => navigate("Profile", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>Profile With ScrollView</Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight onPress={() => navigate('List', {})}>
+          <TouchableHighlight onPress={() => navigate("List", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>ListView</Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight onPress={() => navigate('sectionList', {})}>
+          <TouchableHighlight onPress={() => navigate("sectionList", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>Section ListView</Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight onPress={() => navigate('Grid', {})}>
+          <TouchableHighlight onPress={() => navigate("Grid", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>GridView</Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight onPress={() => navigate('Login', {})}>
+          <TouchableHighlight onPress={() => navigate("Login", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>LoginPage</Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight onPress={() => navigate('SignUp', {})}>
+          <TouchableHighlight onPress={() => navigate("SignUp", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>SignUp</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate('JsonList', {})}>
+          <TouchableHighlight onPress={() => navigate("JsonList", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>JsonList</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate('WebViewExample', {})}>
+          <TouchableHighlight onPress={() => navigate("WebViewExample", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>WebViewExample</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate('ImageSliderView', {})}>
+          <TouchableHighlight onPress={() => navigate("ImageSliderView", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>ImageSliderView</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate('ImageInfoSlider', {})}>
+          <TouchableHighlight onPress={() => navigate("ImageInfoSlider", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>ImageInfoSlider</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate('MapScreen', {})}>
+          <TouchableHighlight onPress={() => navigate("MapScreen", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>MapScreen</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate('GradientScreen', {})}>
+          <TouchableHighlight onPress={() => navigate("GradientScreen", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>GradientScreen</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate('GradientList', {})}>
+          <TouchableHighlight onPress={() => navigate("GradientList", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>GradientList</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate('MenuBarProfile', {})}>
+          <TouchableHighlight onPress={() => navigate("MenuBarProfile", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>MenuBarProfile</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate('ActivityIndicatorExample', {})}>
+          <TouchableHighlight
+            onPress={() => navigate("ActivityIndicatorExample", {})}
+          >
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>ActivityIndicatorExample</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate('AsyncStorageExample', {})}>
+          <TouchableHighlight
+            onPress={() => navigate("AsyncStorageExample", {})}
+          >
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>AsyncStorageExample</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate('PopupDialogTest', {})}>
+          <TouchableHighlight onPress={() => navigate("PopupDialogTest", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>PopupDialogTest</Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate('Movies', {})}>
+          <TouchableHighlight onPress={() => navigate("Movies", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>Movies List Api</Text>
             </View>
           </TouchableHighlight>
 
-          <TouchableHighlight onPress={() => navigate('TestFile', {})}>
+          <TouchableHighlight onPress={() => navigate("TestFile", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>TestFile List Api</Text>
             </View>
           </TouchableHighlight>
-                    <TouchableHighlight onPress={() => navigate('FontTest', {})}>
+          <TouchableHighlight onPress={() => navigate("FontTest", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>Font Show </Text>
             </View>
-
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => navigate("TestApiTwo", {})}>
+            <View style={styles.buttondtyle}>
+              <Text style={styles.buttonText}>TestApiTwo </Text>
+            </View>
           </TouchableHighlight>
         </ScrollView>
       </View>
-
     );
   }
 }
-
