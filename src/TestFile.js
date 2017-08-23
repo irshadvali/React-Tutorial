@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ActivityIndicator, ListView, Text, View, Image, StyleSheet } from 'react-native';
 import styles from '../Styles';
+import TestListMenu from './core_component/TestListMenu';
 export default class TestFile extends Component {
     constructor(props) {
         super(props);
@@ -43,20 +44,14 @@ export default class TestFile extends Component {
                     renderRow={
                         (rowData) =>
                             <View>
-                                <View style={styles.listmain}>
-                                    <View style={styles.partone}>
-                                        <Text> {rowData[5]}</Text>
-                                        <Text >({rowData[4]})</Text>
-                                    </View>
-                                    <View style={styles.partthree}></View>
-                                    <View style={styles.parttwo}>
-                                        <Text style={styles.texcolorbold}> {rowData[8]+"( "+rowData[6]+" )"}</Text>
-                                        <Text style={styles.texcolorbold}>({"Wt. "+rowData[7]})</Text>
-                                    </View>
+                                <TestListMenu
+                                        ptime={rowData[5]}
+                                        pday={rowData[4]}
+                                        pPkg={rowData[8]}
+                                        pBundle={rowData[6]}
+                                        pWt={rowData[7]}
 
-                                </View>
-
-                                <View style={{ height: 2, backgroundColor: '#e6e6e6' }}></View>
+                                />
                             </View>
                     }
 

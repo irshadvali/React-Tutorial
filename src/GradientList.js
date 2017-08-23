@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import LinearGradient from 'react-native-linear-gradient';
-import GradientCommon from './GradientCommon';
+import GradientCommon from './core_component/GradientCommon';
 import styles from "../Styles";
 
 class GradientList extends React.Component {
