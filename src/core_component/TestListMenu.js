@@ -4,13 +4,7 @@ import styles from "../../Styles";
 import {
   AppRegistry,
   Text,
-  Button,
   View,
-  TouchableOpacity,
-  StyleSheet,
-  ListView,
-  AsyncStorage,
-  ScrollView
 } from "react-native";
 
 class TestListMenu extends React.Component {
