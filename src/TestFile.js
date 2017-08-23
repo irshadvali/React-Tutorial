@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ActivityIndicator, ListView, Text, View, Image, StyleSheet } from 'react-native';
+import { ActivityIndicator, ListView,  View,  StyleSheet } from 'react-native';
 import styles from '../Styles';
 import TestListMenu from './core_component/TestListMenu';
 export default class TestFile extends Component {
