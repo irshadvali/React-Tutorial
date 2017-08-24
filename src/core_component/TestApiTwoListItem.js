@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import styles from "../../Styles";
 
 import { AppRegistry, Text, View, Image } from "react-native";
+import RowItem from "../common_component/RowItem";
+import HOME from "../images/home.png";
+import ONE from "../images/one.png";
 
 class TestApiTwoListItem extends React.Component {
   static propTypes = {
@@ -23,69 +26,52 @@ class TestApiTwoListItem extends React.Component {
     return (
       <View style={styles.containerAcc}>
         {/* below block for city */}
-        <View style={styles.itemrow}>
-          <Image
-            style={styles.row_imag}
-            source={require("../images/one.png")}
-          />
-          <Text style={styles.texcolorbold}>
-            {" "}{this.props.toCity + " to " + this.props.fromCity}
-          </Text>
-        </View>
-        {/* below block for truck capacity ,truck type and truck manufacturing */}
-        <View style={styles.itemrow}>
-          <Image
-            style={styles.row_imag}
-            source={require("../images/one.png")}
-          />
-          <Text>
-            {" "}{this.props.trkCapacity +
-              " Tons | " +
-              this.props.trkType +
-              " | " +
-              this.props.trkMfg}
-          </Text>
-        </View>
+        <RowItem
+          valueOne={ONE}
+          valueTwo={this.props.toCity}
+          valueThree={" to " + this.props.fromCity}
+          valuefour=""
+        />
+ {/* below block for truck ton ,truck type and truck truck mfg */}
+        <RowItem
+          valueOne={ONE}
+          valueTwo={this.props.trkCapacity}
+          valueThree={" | " + this.props.trkType}
+          valuefour={" | " +this.props.trkMfg}
+        />
+
         {/* below block for truck capacity ,truck dmm and truck truck number */}
-        <View style={styles.itemrow}>
-          <Image
-            style={styles.row_imag}
-            source={require("../images/one.png")}
-          />
-          <Text>
-            {" "}{this.props.trkDmm + " | " + this.props.trkNumber}
-          </Text>
-        </View>
+
+        <RowItem
+          valueOne={ONE}
+          valueTwo={this.props.trkDmm}
+          valueThree={" | " + this.props.trkNumber}
+          valuefour=""
+        />
+
         {/* below block for commodity Type ,truck dmm and packing Type */}
-        <View style={styles.itemrow}>
-          <Image
-            style={styles.row_imag}
-            source={require("../images/one.png")}
-          />
-          <Text>
-            {" "}{this.props.commodityType + " | " + this.props.packingType}
-          </Text>
-        </View>
+        <RowItem
+          valueOne={ONE}
+          valueTwo={this.props.commodityType}
+          valueThree={" | " + this.props.packingType}
+          valuefour=""
+        />
+
         {/* below block for company Name ,truck dmm and company Mobile number*/}
-        <View style={styles.itemrow}>
-          <Image
-            style={styles.row_imag}
-            source={require("../images/one.png")}
-          />
-          <Text>
-            {" "}{this.props.companyName + " | " + this.props.companyMobile}
-          </Text>
-        </View>
+        <RowItem
+          valueOne={ONE}
+          valueTwo={this.props.companyName}
+          valueThree={" | " + this.props.companyMobile}
+          valuefour=""
+        />
+
         {/* below block for Offer price*/}
-        <View style={styles.itemrow}>
-          <Image
-            style={styles.row_imag}
-            source={require("../images/one.png")}
-          />
-          <Text>
-            {" "}{this.props.offerPrice}
-          </Text>
-        </View>
+                <RowItem
+          valueOne={ONE}
+          valueTwo={this.props.offerPrice}
+          valueThree=""
+          valuefour=""
+        />
 
         <View style={{ height: 1, backgroundColor: "#9d9d9d", marginTop: 5 }} />
       </View>
