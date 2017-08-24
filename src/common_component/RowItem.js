@@ -18,7 +18,7 @@ class RowItem extends React.Component {
         <View style={styles.itemrow}>
           <Image style={styles.row_imag} source={this.props.valueOne} />
           <Text>
-            {this.props.valueTwo + " " + this.props.valueThree +" "+this.props.valuefour}
+            {this.props.valueTwo + " " + this.props.valueThree +" "+ this.props.valuefour+""+this.props.valueOne}
           </Text>
         </View>
       </View>

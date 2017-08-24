@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styles from "../../Styles";
-
 import { AppRegistry, Text, View, Image } from "react-native";
 import RowItem from "../common_component/RowItem";
 import HOME from "../images/home.png";
@@ -22,22 +21,22 @@ class TestApiTwoListItem extends React.Component {
     offerPrice: React.PropTypes.string
   };
 
-  render() {
+  render() { 
     return (
       <View style={styles.containerAcc}>
         {/* below block for city */}
         <RowItem
-          valueOne={ONE}
+          valueOne={require('../images/one.png')}
           valueTwo={this.props.toCity}
           valueThree={" to " + this.props.fromCity}
           valuefour=""
         />
- {/* below block for truck ton ,truck type and truck truck mfg */}
+        {/* below block for truck ton ,truck type and truck truck mfg */}
         <RowItem
           valueOne={ONE}
           valueTwo={this.props.trkCapacity}
           valueThree={" | " + this.props.trkType}
-          valuefour={" | " +this.props.trkMfg}
+          valuefour={" | " + this.props.trkMfg}
         />
 
         {/* below block for truck capacity ,truck dmm and truck truck number */}
@@ -66,7 +65,7 @@ class TestApiTwoListItem extends React.Component {
         />
 
         {/* below block for Offer price*/}
-                <RowItem
+        <RowItem
           valueOne={ONE}
           valueTwo={this.props.offerPrice}
           valueThree=""
