@@ -11,7 +11,7 @@ export default class TestApiTwo extends Component {
     }
 
     componentDidMount() {
-        return fetch('https://api.myjson.com/bins/6l2b1')
+        return fetch('https://api.myjson.com/bins/1ahk1h')
             .then((response) => response.json())
             .then((responseJson) => {
                 let ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
