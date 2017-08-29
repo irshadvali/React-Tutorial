@@ -24,6 +24,7 @@ import Movies from './Movies';
 import TestFile from './TestFile';
 import FontTest from './FontTest';
 import TestApiTwo from './TestApiTwo';
+import TestReducer from './TestReducer'
 
 import {
   AppRegistry,
@@ -33,7 +34,7 @@ import {
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
-const sample_stack = StackNavigator({ /* we can change it to  TabNavigator and DrawerNavigator*/
+const Sample_stack = StackNavigator({ /* we can change it to  TabNavigator and DrawerNavigator*/
   Home: { screen: HomeScreen },
   Profile :{screen :ProfileScreen},
   List:{screen :ListView},
@@ -57,6 +58,7 @@ const sample_stack = StackNavigator({ /* we can change it to  TabNavigator and D
      TestFile: {screen: TestFile},
      FontTest: {screen: FontTest},
      TestApiTwo: {screen: TestApiTwo},
+     TestReducer: {screen: TestReducer},
     
 });
 
@@ -69,5 +71,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
 });
-export default sample_stack
+export default Sample_stack
 //AppRegistry.registerComponent('FirstScreen', () => sample_stack);
