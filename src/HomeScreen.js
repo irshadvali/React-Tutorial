@@ -144,6 +144,11 @@ export default class HomeScreen extends React.Component {
               <Text style={styles.buttonText}>TestReducer </Text>
             </View>
           </TouchableHighlight>
+           <TouchableHighlight onPress={() => navigate("TestReducerTwo", {})}>
+            <View style={styles.buttondtyle}>
+              <Text style={styles.buttonText}>TestReducerTwo </Text>
+            </View>
+          </TouchableHighlight>
         </ScrollView>
       </View>
     );

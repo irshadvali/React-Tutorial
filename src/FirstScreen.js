@@ -25,6 +25,7 @@ import TestFile from './TestFile';
 import FontTest from './FontTest';
 import TestApiTwo from './TestApiTwo';
 import TestReducer from './TestReducer'
+import TestReducerTwo from './TestReducerTwo'
 
 import {
   AppRegistry,
@@ -59,6 +60,7 @@ const Sample_stack = StackNavigator({ /* we can change it to  TabNavigator and D
      FontTest: {screen: FontTest},
      TestApiTwo: {screen: TestApiTwo},
      TestReducer: {screen: TestReducer},
+      TestReducerTwo: {screen: TestReducerTwo},
     
 });
 
