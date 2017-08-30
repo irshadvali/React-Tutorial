@@ -12,7 +12,7 @@ const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     }
 
     componentDidMount() {
-        this.props.loadInfotwo(loadInfotwo);
+        this.props.loadInfotwo(TESTTWO_API);
        
     }
 
