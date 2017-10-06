@@ -73,6 +73,8 @@
 		9AD4366691064A0B80A5D63C /* RobotoLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C462FEC90E345D180F47FAC /* RobotoLight.ttf */; };
 		9A5488E89F2D49DB9D15D44A /* RobotoThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24002127816049CC97BF5401 /* RobotoThin.ttf */; };
 		496BABF7E98A465C87DF26FB /* RobotoRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D44B91A622904EC8887AD5C4 /* RobotoRegular.ttf */; };
+		78D5AFCF339540ACA8BBF1DC /* RobotoMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B4B76A2429946CF99356A7E /* RobotoMedium.ttf */; };
+		4DAC774782214F9F824E55DC /* libRNCardView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF21791948C4B5682F57D42 /* libRNCardView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -333,6 +335,9 @@
 		5C462FEC90E345D180F47FAC /* RobotoLight.ttf */ = {isa = PBXFileReference; name = "RobotoLight.ttf"; path = "../assets/fonts/RobotoLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		24002127816049CC97BF5401 /* RobotoThin.ttf */ = {isa = PBXFileReference; name = "RobotoThin.ttf"; path = "../assets/fonts/RobotoThin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		D44B91A622904EC8887AD5C4 /* RobotoRegular.ttf */ = {isa = PBXFileReference; name = "RobotoRegular.ttf"; path = "../assets/fonts/RobotoRegular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5B4B76A2429946CF99356A7E /* RobotoMedium.ttf */ = {isa = PBXFileReference; name = "RobotoMedium.ttf"; path = "../assets/fonts/RobotoMedium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		631F6D0A88984C23B3BB9A4E /* RNCardView.xcodeproj */ = {isa = PBXFileReference; name = "RNCardView.xcodeproj"; path = "../node_modules/react-native-cardview/ios/RNCardView.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		2FF21791948C4B5682F57D42 /* libRNCardView.a */ = {isa = PBXFileReference; name = "libRNCardView.a"; path = "libRNCardView.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +367,7 @@
 				1BC0137F274A40118E16BD9E /* libBVLinearGradient.a in Frameworks */,
 				09EA1BAEDDFB4D3A9D5E4393 /* libAirMaps.a in Frameworks */,
 				A2AD9CA35D58409BBE00CAB0 /* libRNVectorIcons.a in Frameworks */,
+				4DAC774782214F9F824E55DC /* libRNCardView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +537,7 @@
 				D49F6C4C545D450CBA0F69F0 /* BVLinearGradient.xcodeproj */,
 				657BBBABE7454291BE256B7E /* AirMaps.xcodeproj */,
 				7823D2444DA44227AE32F8E3 /* RNVectorIcons.xcodeproj */,
+				631F6D0A88984C23B3BB9A4E /* RNCardView.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -606,6 +613,7 @@
 				5C462FEC90E345D180F47FAC /* RobotoLight.ttf */,
 				24002127816049CC97BF5401 /* RobotoThin.ttf */,
 				D44B91A622904EC8887AD5C4 /* RobotoRegular.ttf */,
+				5B4B76A2429946CF99356A7E /* RobotoMedium.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1004,6 +1012,7 @@
 				9AD4366691064A0B80A5D63C /* RobotoLight.ttf in Resources */,
 				9A5488E89F2D49DB9D15D44A /* RobotoThin.ttf in Resources */,
 				496BABF7E98A465C87DF26FB /* RobotoRegular.ttf in Resources */,
+				78D5AFCF339540ACA8BBF1DC /* RobotoMedium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1140,12 +1149,14 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-cardview/ios",
 				);
 			};
 			name = Debug;
@@ -1169,12 +1180,14 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-cardview/ios",
 				);
 			};
 			name = Release;
@@ -1199,6 +1212,7 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-cardview/ios",
 				);
 			};
 			name = Debug;
@@ -1222,6 +1236,7 @@
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-cardview/ios",
 				);
 			};
 			name = Release;
@@ -1254,12 +1269,14 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-cardview/ios",
 				);
 			};
 			name = Debug;
@@ -1292,12 +1309,14 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 					"$(SRCROOT)/../node_modules/react-native-maps/lib/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
+					"$(SRCROOT)/../node_modules/react-native-cardview/ios",
 				);
 			};
 			name = Release;
@@ -1325,6 +1344,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -1349,6 +1369,7 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

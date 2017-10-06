@@ -149,6 +149,18 @@ export default class HomeScreen extends React.Component {
               <Text style={styles.buttonText}>TestReducerTwo </Text>
             </View>
           </TouchableHighlight>
+
+           <TouchableHighlight onPress={() => navigate("WixActionSheet", {})}>
+            <View style={styles.buttondtyle}>
+              <Text style={styles.buttonText}>WixActionSheet </Text>
+            </View>
+          </TouchableHighlight>
+
+            <TouchableHighlight onPress={() => navigate("CardViewScreen", {})}>
+            <View style={styles.buttondtyle}>
+              <Text style={styles.buttonText}>CardViewScreen </Text>
+            </View>
+          </TouchableHighlight>
         </ScrollView>
       </View>
     );
