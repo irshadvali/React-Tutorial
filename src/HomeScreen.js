@@ -166,6 +166,12 @@ export default class HomeScreen extends React.Component {
               <Text style={styles.buttonText}>AnimatedSpringAnimation </Text>
             </View>
           </TouchableHighlight>
+
+          <TouchableHighlight onPress={() => navigate("AnimationMultipleTime", {})}>
+            <View style={styles.buttondtyle}>
+              <Text style={styles.buttonText}>AnimationMultipleTime </Text>
+            </View>
+          </TouchableHighlight>
         </ScrollView>
       </View>
     );

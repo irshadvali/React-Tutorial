@@ -67,7 +67,8 @@ const Sample_stack = StackNavigator({ /* we can change it to  TabNavigator and D
       TestReducerTwo: {screen: TestReducerTwo},
       WixActionSheet: {screen: WixActionSheet},
       CardViewScreen: {screen: CardViewScreen},
-      AnimatedSpringAnimation: {screen: AnimatedSpringAnimation}
+      AnimatedSpringAnimation: {screen: AnimatedSpringAnimation},
+      AnimationMultipleTime: {screen: AnimationMultipleTime}
     
 });
 
