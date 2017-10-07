@@ -28,6 +28,8 @@ import TestReducer from './TestReducer'
 import TestReducerTwo from './TestReducerTwo'
 import WixActionSheet from './WixActionSheet'
 import CardViewScreen from './CardViewScreen'
+import AnimatedSpringAnimation from './AnimatedSpringAnimation'
+import AnimationMultipleTime from './AnimationMultipleTime'
 
 import {
   AppRegistry,
@@ -64,7 +66,8 @@ const Sample_stack = StackNavigator({ /* we can change it to  TabNavigator and D
      TestReducer: {screen: TestReducer},
       TestReducerTwo: {screen: TestReducerTwo},
       WixActionSheet: {screen: WixActionSheet},
-      CardViewScreen: {screen: CardViewScreen}
+      CardViewScreen: {screen: CardViewScreen},
+      AnimatedSpringAnimation: {screen: AnimatedSpringAnimation}
     
 });
 
