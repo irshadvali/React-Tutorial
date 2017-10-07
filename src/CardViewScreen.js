@@ -13,7 +13,7 @@ import SVGImage from "react-native-svg-image";
 
 class CardViewScreen extends React.Component {
   static navigationOptions = {
-    title: "this is CardViewScreen"
+    title: "This is CardViewScreen"
   };
   render() {
     var { params } = this.props.navigation.state;
