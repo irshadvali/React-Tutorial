@@ -172,6 +172,12 @@ export default class HomeScreen extends React.Component {
               <Text style={styles.buttonText}>AnimationMultipleTime </Text>
             </View>
           </TouchableHighlight>
+          <TouchableHighlight onPress={() => navigate("PostCallScreen", {})}>
+            <View style={styles.buttondtyle}>
+              <Text style={styles.buttonText}>PostCallScreen </Text>
+            </View>
+          </TouchableHighlight>
+
         </ScrollView>
       </View>
     );

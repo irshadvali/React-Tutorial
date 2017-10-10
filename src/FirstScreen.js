@@ -30,6 +30,7 @@ import WixActionSheet from './WixActionSheet'
 import CardViewScreen from './CardViewScreen'
 import AnimatedSpringAnimation from './AnimatedSpringAnimation'
 import AnimationMultipleTime from './AnimationMultipleTime'
+import PostCallScreen from './PostCallSample/view/PostCallScreen'
 
 import {
   AppRegistry,
@@ -68,7 +69,8 @@ const Sample_stack = StackNavigator({ /* we can change it to  TabNavigator and D
       WixActionSheet: {screen: WixActionSheet},
       CardViewScreen: {screen: CardViewScreen},
       AnimatedSpringAnimation: {screen: AnimatedSpringAnimation},
-      AnimationMultipleTime: {screen: AnimationMultipleTime}
+      AnimationMultipleTime: {screen: AnimationMultipleTime},
+      PostCallScreen: {screen: PostCallScreen}
     
 });
 
