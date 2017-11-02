@@ -30,8 +30,10 @@ import WixActionSheet from './WixActionSheet'
 import CardViewScreen from './CardViewScreen'
 import AnimatedSpringAnimation from './AnimatedSpringAnimation'
 import AnimationMultipleTime from './AnimationMultipleTime'
-import PostCallScreen from './PostCallSample/view/PostCallScreen'
-
+import SignUpContainer from './../src/PostCallSample/container/SignUpContainer'
+import TestLayout from './TestLayout'
+import ViewComponet from './reduxTutorial/ViewComponet'
+import ShowValues from './reduxTutorial/ShowValues'
 import {
   AppRegistry,
   StyleSheet,
@@ -70,7 +72,10 @@ const Sample_stack = StackNavigator({ /* we can change it to  TabNavigator and D
       CardViewScreen: {screen: CardViewScreen},
       AnimatedSpringAnimation: {screen: AnimatedSpringAnimation},
       AnimationMultipleTime: {screen: AnimationMultipleTime},
-      PostCallScreen: {screen: PostCallScreen}
+      SignUpContainer: {screen: SignUpContainer},
+      TestLayout: {screen: TestLayout},
+      ViewComponet: {screen: ViewComponet},
+      ShowValues:{screen: ShowValues},
     
 });
 

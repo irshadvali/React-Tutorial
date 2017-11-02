@@ -1,5 +1,5 @@
 import fetch from "fetch-everywhere";
-export const API_URL_ROOT = "http://192.168.0.26:3000/";
+export const API_URL_ROOT = "http://192.168.2.23:3000/";
 export async function post(url, payload) {
   // body_json: JSON.stringify(payload)
   var formBody = [];

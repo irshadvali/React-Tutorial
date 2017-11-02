@@ -18,72 +18,127 @@ class CardViewScreen extends React.Component {
   render() {
     var { params } = this.props.navigation.state;
     return (
-      <View>
-        <Text>this is CardView screen, Exmaple of Cardview</Text>
-        <View style={styles}>
-          {/* <CardView cardElevation={2} cardMaxElevation={2} cornerRadius={5}> */}
+   
+    <View style={{flex: 1}}>
+     <View style={{flex: 0.9}}>
           <View style={styles.mainCaontaine}>
-            <View style={ styles.container }>
-              <Text style={styles.texttest}>Conference Room Name</Text>
-              <Text style={styles.companyName}>ABC Tech</Text>
-              <Text style={styles.addressText}>Bangalore</Text>
+
+            <View style={styles.container}>
+              <View style={styles.mainbox}>
+                <View style={styles.boxLeft}>
+                  <Text style={styles.textLeft}>Host Name   : </Text>
+                </View>
+                <View style={styles.boxRight}>
+                 <Text style={styles.textRight}>Irshad Vali</Text>
+                </View>
+              </View>
+
+
+              <View style={styles.mainbox}>
+                <View style={styles.boxLeft}>
+                  <Text style={styles.textLeft}>Room Name : </Text>
+                </View>
+                <View style={styles.boxRight}>
+                 <Text style={styles.textRight}>Confrence A</Text>
+                </View>
+              </View>
+
+
+              <View style={styles.mainbox}>
+                <View style={styles.boxLeft}>
+                  <Text style={styles.textLeft}>Comapny      : </Text>
+                </View>
+                <View style={styles.boxRight}>
+                 <Text style={styles.textRight}>Xelpmoc Design And Tech</Text>
+                </View>
+              </View> 
+
+              <View style={styles.mainbox}>
+                <View style={styles.boxLeft}>
+                  <Text style={styles.textLeft}>Location       : </Text>
+                </View>
+                <View style={styles.boxRight}>
+                 <Text style={styles.textRight}>Bangalore</Text>
+                </View>
+              </View>
+       
+              <View style={styles.mainbox}>
+                <View style={styles.boxLeft}>
+                  <Text style={styles.textLeft}>Guest            : </Text>
+                </View>
+                <View style={styles.boxRight}>
+                 <Text style={styles.textRight}>Sriram, Chitranjan, Manish,Sriram, Chitranjan, Manish,Sriram, Chitranjan, Manish,Sriram, Chitranjan, Manish,Sriram, Chitranjan, Manish</Text>
+                </View>
+              </View>
             </View>
-            </View>
-          {/* </CardView> */}
+          </View>
+         
+          </View>
+          <View style={styles.bottomLay}>
+          <View style={styles.bottomLayLeft}> <Text>Left</Text></View>
+          <View style={styles.bottomLayRight}> <Text>Right</Text></View>
+        {/* <Text>fixed footer</Text> */}
+       </View>
         </View>
-      </View>
+     
     );
   }
 }
 CardViewScreen.navigationOptions = {
   title: "Company Address"
 };
+
 const styles = StyleSheet.create({
   container: {
-    paddingLeft:20,
-    paddingRight:20,
-    paddingBottom:20,
-    paddingTop:10
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingBottom: 10,
+    paddingTop: 10
   },
-
-
-  padding10: {
-    padding: 10
-  },
-
-  texttest: {
-    fontFamily: "RobotoLight",
-    fontSize: 20,
-    color: "#333333",
-  },
-    conferenceRoom: {
+  textLeft: {
     fontFamily: "RobotoBold",
-    fontSize:15,
+    fontSize: 15,
     color: "#333333",
-    marginTop: 5
+    
   },
-    companyName: {
-    fontFamily: "RobotoBold",
-    fontSize:15,
-    color: "#666666",
-  },
-    addressText: {
+
+  textRight: {
     fontFamily: "RobotoLight",
-    fontSize:15,
-    color: "#666666",
-    marginTop: 5
+    fontSize: 15,
+    color: "#000000",
+    
   },
-  mainCaontaine:{
-    paddingLeft:10,
-    paddingRight:10,
-    paddingBottom:10,
-    paddingTop:10,
+
+  mainCaontaine: {
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingBottom: 10,
+    paddingTop: 10,
     borderRadius: 2,
     marginTop: 10,
     marginLeft: 10,
     marginRight: 10,
-    backgroundColor: '#ffffff'
+    backgroundColor: "#ffffff",
 
+  },
+  boxLeft: {
+    flex: 0.3,
+  },
+  boxRight: {
+    flex: 0.7,
+  },
+  mainbox: {
+    flexDirection: "row",
+  },
+  bottomLay:{
+    flex: 0.1,
+    backgroundColor: '#d00000'
+  },
+  bottomLayLeft:{
+    flex: 0.5,
+  },
+  bottomLayLeft:{
+    flex: 0.5,
   }
   //  npm insta}ll react-native-cardview --save
   //  react-native link react-native-cardview

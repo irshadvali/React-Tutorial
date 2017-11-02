@@ -23,7 +23,18 @@ export default class HomeScreen extends React.Component {
     var { navigate } = this.props.navigation;
     return (
       <View style={styles.scvwcontainer}>
+
+
+      
         <ScrollView style={styles.scvwcontainer}>
+
+        
+        <TouchableHighlight onPress={() => navigate("TestLayout", {})}>
+            <View style={styles.buttondtyle}>
+              <Text style={styles.buttonText}>TestLayout</Text>
+            </View>
+          </TouchableHighlight>
+
           <TouchableHighlight onPress={() => navigate("Profile", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>Profile With ScrollView</Text>
@@ -172,12 +183,16 @@ export default class HomeScreen extends React.Component {
               <Text style={styles.buttonText}>AnimationMultipleTime </Text>
             </View>
           </TouchableHighlight>
-          <TouchableHighlight onPress={() => navigate("PostCallScreen", {})}>
+          <TouchableHighlight onPress={() => navigate("SignUpContainer", {})}>
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>PostCallScreen </Text>
             </View>
           </TouchableHighlight>
-
+          <TouchableHighlight onPress={() => navigate("ViewComponet", {})}>
+            <View style={styles.buttondtyle}>
+              <Text style={styles.buttonText}>ViewComponetRedux </Text>
+            </View>
+          </TouchableHighlight>
         </ScrollView>
       </View>
     );
