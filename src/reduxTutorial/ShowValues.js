@@ -10,8 +10,8 @@ import {
   TouchableOpacity
 } from "react-native";
 import { StackNavigator } from "react-navigation";
-import { selectValues } from '../action/action.datashow'
-import { connect} from 'react-redux'
+import { selectValues } from "../action/action.datashow";
+import { connect } from "react-redux";
 
 class ShowValues extends React.Component {
   static navigationOptions = {
@@ -53,19 +53,17 @@ const styles = StyleSheet.create({
     backgroundColor: "#2196F3",
     width: 200,
     borderRadius: 30,
-    height:50,
-    marginTop:40,
+    height: 50,
+    marginTop: 40
   }
 });
 
-
-
 const mapStateToProps = state => {
-    return {
-        savedata: state.ShowDataReducer.savedata
-    };
+  return {
+    savedata: state.ShowDataReducer.savedata
   };
-  
-  export default connect(mapStateToProps, {
-    selectValues
-  })(ShowValues);
+};
+
+export default connect(mapStateToProps, {
+  selectValues
+})(ShowValues);
