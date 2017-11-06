@@ -17,6 +17,7 @@
 		"react": "16.0.0-alpha.12",
 		"react-native": "0.46.4",
 		"react-native-cardview": "^1.1.0",
+		"react-native-custom-snackbar": "^1.0.1",
 		"react-native-drawer-menu": "^0.2.4",
 		"react-native-easy-grid-view": "^0.1.1",
 		"react-native-image-slider": "^1.1.5",

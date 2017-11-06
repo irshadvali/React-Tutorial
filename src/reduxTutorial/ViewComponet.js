@@ -12,6 +12,8 @@ import {
 import { connect } from "react-redux";
 import { StackNavigator } from "react-navigation";
 import { selectValues } from "../action/action.datashow";
+import { totalvalueCheck } from "../action/action.datashow";
+import { totalvalueSub } from "../action/action.datashow";
 class ViewComponet extends React.Component {
   static navigationOptions = {
     title: "this is scrollview example"
@@ -20,6 +22,7 @@ class ViewComponet extends React.Component {
     super(props);
     state: {
       inputvaue: "";
+      count: 0;
     }
   }
   _onPress = () => {
@@ -28,11 +31,17 @@ class ViewComponet extends React.Component {
     this.props.selectValues(this.state.inputvaue);
     navigate("ShowValues", {});
   };
+  _onAdd = () => {
+    this.props.totalvalueCheck()
+  };
+  _onSub = () => {
+    this.props.totalvalueSub()
+  };
   render() {
     var { params } = this.props.navigation.state;
     return (
       <View>
-        <Text>this is third screen, Exmaple of Scrollview</Text>
+        <Text>Redux example</Text>
         <TextInput
           style={{ height: 40, borderColor: "gray", borderWidth: 1 }}
           onChangeText={text => this.setState({ inputvaue: text })}
@@ -40,6 +49,21 @@ class ViewComponet extends React.Component {
         <TouchableOpacity style={styles.button} onPress={this._onPress}>
           <Text style={styles.text}>LOGIN</Text>
         </TouchableOpacity>
+
+        <Text>{this.props.savedata}</Text>
+        <View style={styles.rowItem}>
+          <TouchableOpacity style={styles.button} onPress={this._onAdd}>
+            <Text style={styles.text}>Increment</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.button} onPress={this._onSub}>
+            <Text style={styles.text}>Decrement</Text>
+          </TouchableOpacity>
+        </View>
+
+       <View style={styles.resultView}> 
+       <Text style={styles.textviewS}>"irshad ==="{this.props.totalvalue}</Text>
+       </View>
       </View>
     );
   }
@@ -63,7 +87,7 @@ const styles = StyleSheet.create({
   },
   inputTextS: {
     height: 50,
-    width: 200
+    width: 150
   },
   button: {
     alignItems: "center",
@@ -72,16 +96,34 @@ const styles = StyleSheet.create({
     width: 200,
     borderRadius: 30,
     height: 50,
-    marginTop: 40
+    marginTop: 40,
+    marginLeft: 5
+  },
+  rowItem: {
+    flexDirection: "row"
+  },
+  textviewS:{
+    justifyContent: 'center',
+  
+    fontSize:30,
+    color:'black'
+  },
+  resultView:{
+    flex:1,
+    alignItems: 'center',
   }
 });
 
 const mapStateToProps = state => {
   return {
-    savedata: state.ShowDataReducer.savedata
+    savedata: state.ShowDataReducer.savedata,
+    totalvalue: state.CalculateReducer.totalvalue,
+  
   };
 };
 
 export default connect(mapStateToProps, {
-  selectValues
+  selectValues,
+  totalvalueCheck,
+  totalvalueSub
 })(ViewComponet);

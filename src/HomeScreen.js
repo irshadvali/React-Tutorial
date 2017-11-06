@@ -193,6 +193,13 @@ export default class HomeScreen extends React.Component {
               <Text style={styles.buttonText}>ViewComponetRedux </Text>
             </View>
           </TouchableHighlight>
+
+          <TouchableHighlight onPress={() => navigate("SnackBar", {})}>
+            <View style={styles.buttondtyle}>
+              <Text style={styles.buttonText}>SnackBar </Text>
+            </View>
+          </TouchableHighlight>
+
         </ScrollView>
       </View>
     );
