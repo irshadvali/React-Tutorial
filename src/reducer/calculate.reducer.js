@@ -8,10 +8,11 @@ const CalculateReducer = (
 ) => {
   switch (action.type) {
     case TOTAL_VALUE:
-    // totalvalue=action.payload + 1
-      return { ...state, totalvalue: state.totalvalue + 1 };
+     // totalvalue=state.totalvalue + 1
+      return { ...state, totalvalue: action.payload };
       case SUB_VALUE:
-      return { ...state, totalvalue: state.totalvalue - 1 };
+     // totalvalue=state.totalvalue - 1
+      return { ...state, totalvalue: action.payload };
     default:
       return state;
   }

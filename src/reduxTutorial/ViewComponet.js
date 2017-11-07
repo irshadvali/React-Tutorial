@@ -32,10 +32,12 @@ class ViewComponet extends React.Component {
     navigate("ShowValues", {});
   };
   _onAdd = () => {
-    this.props.totalvalueCheck()
+    var cal_value=this.props.totalvalue+1;
+    this.props.totalvalueCheck(cal_value)
   };
   _onSub = () => {
-    this.props.totalvalueSub()
+    var cal_value=this.props.totalvalue-1;
+    this.props.totalvalueSub(cal_value)
   };
   render() {
     var { params } = this.props.navigation.state;
@@ -47,7 +49,7 @@ class ViewComponet extends React.Component {
           onChangeText={text => this.setState({ inputvaue: text })}
         />
         <TouchableOpacity style={styles.button} onPress={this._onPress}>
-          <Text style={styles.text}>LOGIN</Text>
+          <Text style={styles.text}>SUBMIT</Text>
         </TouchableOpacity>
 
         <Text>{this.props.savedata}</Text>
