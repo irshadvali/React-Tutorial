@@ -7,7 +7,8 @@ import {
   ScrollView,
   StyleSheet,
   TextInput,
-  TouchableOpacity
+  TouchableOpacity,
+  Alert
 } from "react-native";
 import { connect } from "react-redux";
 import { StackNavigator } from "react-navigation";
@@ -20,16 +21,22 @@ class ViewComponet extends React.Component {
   };
   constructor(props) {
     super(props);
-    state: {
-      inputvaue: "";
-      count: 0;
+    this.state= {
+      inputvaue: "",
+      count: 0,
+      textSubmit:'SUBMIT'
     }
   }
   _onPress = () => {
     var { navigate } = this.props.navigation;
-
     this.props.selectValues(this.state.inputvaue);
-    navigate("ShowValues", {});
+    if(this.state.inputvaue.length >0){
+      navigate("ShowValues", {});
+    }
+    else{
+      Alert.alert("please enter some input")
+    }
+  
   };
   _onAdd = () => {
     var cal_value=this.props.totalvalue+1;
@@ -45,11 +52,13 @@ class ViewComponet extends React.Component {
       <View>
         <Text>Redux example</Text>
         <TextInput
-          style={{ height: 40, borderColor: "gray", borderWidth: 1 }}
+          style={{ height: 40, borderColor: "gray", borderWidth: 1, backgroundColor:'#00000000'}}
+          keyboardType = 'numeric'
+          maxLength = {10}
           onChangeText={text => this.setState({ inputvaue: text })}
         />
         <TouchableOpacity style={styles.button} onPress={this._onPress}>
-          <Text style={styles.text}>SUBMIT</Text>
+          <Text style={styles.text}>{this.state.textSubmit}</Text>
         </TouchableOpacity>
 
         <Text>{this.props.savedata}</Text>
