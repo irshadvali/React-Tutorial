@@ -29,6 +29,7 @@ class ViewComponet extends React.Component {
   }
   _onPress = () => {
     var { navigate } = this.props.navigation;
+
     this.props.selectValues(this.state.inputvaue);
     if(this.state.inputvaue.length >0){
       navigate("ShowValues", {});
@@ -43,8 +44,14 @@ class ViewComponet extends React.Component {
     this.props.totalvalueCheck(cal_value)
   };
   _onSub = () => {
-    var cal_value=this.props.totalvalue-1;
-    this.props.totalvalueSub(cal_value)
+    if(this.props.totalvalue >0){
+      var cal_value=this.props.totalvalue-1;
+      this.props.totalvalueSub(cal_value)
+    }
+    else{
+      Alert.alert("Below 0, you can not click on Decrement Button")
+    }
+
   };
   render() {
     var { params } = this.props.navigation.state;
