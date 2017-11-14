@@ -3,6 +3,7 @@ package com.allnavigation;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.wheelpicker.WheelPickerPackage;
 import com.reactlibrary.RNCardViewPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import in.sriraman.sharedpreferences.RNSharedPreferencesReactPackage;
@@ -28,6 +29,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new WheelPickerPackage(),
             new RNCardViewPackage(),
             new VectorIconsPackage(),
             new RNSharedPreferencesReactPackage(),

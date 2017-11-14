@@ -198,8 +198,13 @@ export default class HomeScreen extends React.Component {
             <View style={styles.buttondtyle}>
               <Text style={styles.buttonText}>SnackBar </Text>
             </View>
-          </TouchableHighlight>
+          </TouchableHighlight>   
 
+          <TouchableHighlight onPress={() => navigate("WheelPickerComponent", {})}>
+            <View style={styles.buttondtyle}>
+              <Text style={styles.buttonText}>WheelPickerComponent </Text>
+            </View>
+          </TouchableHighlight> 
         </ScrollView>
       </View>
     );

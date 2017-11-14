@@ -34,6 +34,7 @@ import TestLayout from "./TestLayout";
 import ViewComponet from "./reduxTutorial/ViewComponet";
 import ShowValues from "./reduxTutorial/ShowValues";
 import SnackBar from './uiview/SnackBar'
+import WheelPickerComponent from './WheelPickerComponent'
 import { AppRegistry, StyleSheet, Text, View } from "react-native";
 import { StackNavigator } from "react-navigation";
 
@@ -72,7 +73,8 @@ const Sample_stack = StackNavigator({
   TestLayout: { screen: TestLayout },
   ViewComponet: { screen: ViewComponet },
   ShowValues: { screen: ShowValues },
-  SnackBar: { screen: SnackBar }
+  SnackBar: { screen: SnackBar },
+  WheelPickerComponent: { screen: WheelPickerComponent } 
 });
 
 const styles = StyleSheet.create({

@@ -74,6 +74,14 @@
 		<string>RobotoThin.ttf</string>
 		<string>RobotoRegular.ttf</string>
 		<string>RobotoMedium.ttf</string>
+		<string>raleway-bold.ttf</string>
+		<string>raleway-extrabold.ttf</string>
+		<string>raleway-extralight.ttf</string>
+		<string>raleway-light.ttf</string>
+		<string>raleway-medium.ttf</string>
+		<string>raleway-regular.ttf</string>
+		<string>raleway-semibold.ttf</string>
+		<string>raleway-thin.ttf</string>
 	</array>
 </dict>
 </plist>
