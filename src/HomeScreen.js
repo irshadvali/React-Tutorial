@@ -205,6 +205,12 @@ export default class HomeScreen extends React.Component {
               <Text style={styles.buttonText}>WheelPickerComponent </Text>
             </View>
           </TouchableHighlight> 
+
+          <TouchableHighlight onPress={() => navigate("ToolTipsView", {})}>
+            <View style={styles.buttondtyle}>
+              <Text style={styles.buttonText}>ToolTipsView </Text>
+            </View>
+          </TouchableHighlight> 
         </ScrollView>
       </View>
     );

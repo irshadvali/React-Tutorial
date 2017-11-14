@@ -30,6 +30,7 @@
 		"react-native-shared-preferences": "0.0.8",
 		"react-native-svg-image": "^1.1.4",
 		"react-native-svg-uri": "^1.2.0",
+		"react-native-tooltip-menu": "^1.1.0",
 		"react-native-ui-lib": "^2.0.104",
 		"react-native-vector-icons": "^4.3.0",
 		"react-native-wheel-picker-android": "^1.0.3",
