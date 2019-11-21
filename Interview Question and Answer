@@ -1,0 +1,148 @@
+===============Destructuring Assignment in ES6- Arrays==========
+  ** Without Destructuring**
+var introduction = ["Hello", "I" , "am", "Sarah"];
+    var greeting = introduction[0];
+    var name = introduction[3];
+    console.log(greeting);//"Hello"
+    console.log(name);//"Sarah"
+    **Basic Destructuring
+     var introduction = ["Hello", "I" , "am", "Sarah"];
+    var [greeting, pronoun] = introduction;
+    console.log(greeting);//"Hello"
+    console.log(pronoun);//"I"
+    ** Declaring Variables before Assingment
+    var greeting, pronoun;
+    [greeting, pronoun] = ["Hello", "I" , "am", "Sarah"];
+    console.log(greeting);//"Hello"
+    console.log(pronoun);//"I"
+    ** Skipping Items in an Array
+    var [greeting,,,name] = ["Hello", "I" , "am", "Sarah"];
+    console.log(greeting);//"Hello"
+    console.log(name);//"Sarah
+    var [,pronoun,,name] = ["Hello", "I" , "am", "Sarah"];
+    console.log(pronoun);//"I"
+    console.log(name);//"Sarah"
+    ** Destructuring Assignment with Functions
+    function getArray() {
+        return ["Hello", "I" , "am", "Sarah"];
+    } 
+    var[greeting,pronoun] = getArray();
+    console.log(greeting);//"Hello"
+    console.log(pronoun);//"I"
+    ** Using Default Values
+    var[greeting = "hi",name = "Sarah"] = ["hello"];
+    console.log(greeting);//"Hello"
+    console.log(name);//"Sarah"
+    ** Swapping Values using Destructuring Assignment
+    var a = 3;
+    var b = 6;
+    [a,b] = [b,a];
+    console.log(a);//6
+    console.log(b);//3
+    
+    
+    ==================================
+    
+    ***** REST PARAMETER*****8
+JavaScript | Rest parameter
+Rest parameter is an improved way to handle function parameter, 
+allowing us to more easily handle various input as parameters in a function. 
+The rest parameter syntax allows us to represent an indefinite number of arguments as an array. 
+With the help of a rest parameter a function can be called with any number of arguments, 
+no matter how it was defined. 
+Rest parameter is added in ES2015 or ES6 which improved the ability to handle parameter.
+1--->// Without rest parameter 
+function fun(a, b){ 
+    return a + b; 
+} 
+console.log(fun(1, 2)); // 3 
+console.log(fun(1, 2, 3, 4, 5)); // 3
+1--->// With rest parameter 
+function fun(...input){ 
+    let sum = 0; 
+    for(let i of input){ 
+        sum+=i; 
+    } 
+    return sum; 
+} 
+console.log(fun(1,2)); //3 
+console.log(fun(1,2,3)); //6 
+console.log(fun(1,2,3,4,5)); //15
+***********JavaScript | Spread Operator**************
+Spread operator allows an iterable to expand in places where 0+ arguments are expected.
+It is mostly used in variable array where there is more than 1 values are expected.
+It allows us the privilege to obtain a list of parameters from an array. 
+Syntax of Spread operator is same as Rest parameter but it works completely opposite of it.
+			=====concat()====
+1- // normal array concat() method 
+let arr = [1,2,3]; 
+let arr2 = [4,5]; 
+arr = arr.concat(arr2); 
+console.log(arr); // [ 1, 2, 3, 4, 5 ] 
+2- // spread operator doing the concat job 
+let arr = [1,2,3]; 
+let arr2 = [4,5]; 
+arr = [...arr,...arr2]; 
+console.log(arr); // [ 1, 2, 3, 4, 5 ] 
+		======Copy(like splice method)====
+1--// copying without the spread operator 
+let arr = ['a','b','c']; 
+let arr2 = arr; 
+console.log(arr2); // [ 'a', 'b', 'c' ] 
+ now push
+ let arr = ['a','b','c']; 
+let arr2 = arr; 
+arr2.push('d'); 
+console.log(arr2);  // ['a','b','c','d']
+console.log(arr); // ['a','b','c','d'] // even affected the original array(arr)  
+Use spread operator
+let arr = ['a','b','c']; 
+let arr2 = [...arr]; 
+console.log(arr); // [ 'a', 'b', 'c' ] 
+now push
+arr2.push('d'); //inserting an element at the end of arr2 
+console.log(arr2); // [ 'a', 'b', 'c', 'd' ] 
+console.log(arr); // [ 'a', 'b', 'c' ] 
+Whenever we want to expand an array into another we do something like this:
+// normally used expand method 
+let arr = ['a','b']; 
+let arr2 = [arr,'c','d']; 
+console.log(arr2); // [ [ 'a', 'b' ], 'c', 'd' ] 
+// expand using spread operator 
+let arr = ['a','b']; 
+let arr2 = [...arr,'c','d']; 
+console.log(arr2); // [ 'a', 'b', 'c', 'd' ] 
+// min in an array using Math.min() 
+let arr = [1,2,3,-1]; 
+console.log(Math.min(arr)); //NaN 
+// with spread  
+let arr = [1,2,3,-1]; 
+console.log(Math.min(...arr)); //-1 
+
+
+
+===========let var const=============
+
+```1- var declarations are globally scoped or function scoped while let and const are block scoped.
+2- var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.
+3- They are all hoisted to the top of their scope but while varvariables are initialized with undefined, let and const variables are not initialized.
+4- While var and let can be declared without being initialized, const must be initialized during declaration```
+
+
+========================
+
+A closure is an inner function that has access to the outer (enclosing) function's variables—scope chain.
+The closure has three scope chains: it has access to its own scope (variables defined between its curly brackets),
+it has access to the outer function's variables, and it has access to the global variables.
+ function foo()
+ {
+     var b = 1;
+         function inner(){
+             return b;
+     }
+     return inner;
+ }
+ var get_func_inner = foo();
+console.log(get_func_inner());
+console.log(get_func_inner());
+ console.log(get_func_inner());
