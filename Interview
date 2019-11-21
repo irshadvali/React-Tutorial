@@ -1,0 +1,90 @@
+===============Interview Question============
+
+eact application life cycle.
+Which methods are deprecated in react application life cycle and tell about new methods added.
+Rest parameter
+Spread operator
+Arrow function
+Destructing
+Difference b/w let, var and const
+Explain the redux flow
+Connect method parameters
+Pure component
+State & props
+Variable hoisting
+Closure function
+Async/await
+Promise
+Latest react native version
+Bind, call & apply differences
+map
+fetch and axios difference
+delete function
+reduce function
+========*********===============
+1. Redux explanation
+2. diff b/w let, var & const
+3. JSX
+4. if your application need to connect with hardware what will be the first approach example beacon etc
+5. difference b/w state and props
+6. Explain the state and props
+7. how you will design application architecture
+8. IOT example with react native 
+9. How to make circle under circle in react js
+10. closure function
+11. spread operator
+12. var hosting
+13. promise
+14. map in JS
+15. set in JS
+16. virtual dom in react
+17. arrow function
+18. html media type
+19. html5 new api
+20. props flow(unidirectional)
+21. Js is single threaded or multiple
+22. how to make two way binding in React Js
+23. state (data flow)
+24. Higher order component
+25. application new life cycle methods
+26. why will mount () is deprecated
+27. how we can show image locally
+28. why we use redux
+29. what is React.create class
+30. what are controlled and uncontrolled components in react
+31. what is pure components in react when we need to use these components.
+32. difference b/w functional and class component.
+33. synthetic events
+34. make one component which will show + and - on button click
+35. connect method parameters
+36. what will return connect method
+37. async await in js
+38. way of creating object in js
+39. interaction manager in react native
+40. react refs
+41. setstate will call in which method of life cycle
+42. diff b/w axios and fetch
+43. difference b/w react and react native
+44. clustering in java
+45. way of creating threads in java
+46. multithreading
+47. singleton pattern in java and js
+48. java 8 updates 
+49. advantage of spread operator
+50. rest parameters
+51. es5 & es6 diff
+52. shallow renderer
+53. redux saga and redux thunk 
+54. web server and application server difference 
+55. shadow
+56. functional programming in react
+57. react routing
+58. types of routing 
+59. server side rendering in react
+60. fragment
+61. referenceforward
+62. Navbar
+63. bootstarp
+64. bind, call & apply
+65. reduce 
+66. delete 
