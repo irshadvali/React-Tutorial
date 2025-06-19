@@ -1,0 +1,8 @@
+while true; do
+  if ping -c 1 -W 1 google.com > /dev/null; then
+    echo "✅ Internet is OK - $(date)"
+  else
+    echo "❌ Internet is BROKEN - $(date)"
+  fi
+  sleep 5  # wait 5 seconds before checking again
+done
